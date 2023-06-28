@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #096D93;
+    height: 100px;
+}
+
+h1 {
+    font-family: 'Nosifer', cursive;
+    color: white;
+    text-align: center;
+}
+
+#img_lachainemeteo {
+    width: 80px;
+    margin: 1%;
+}
+
+nav {
+    height: 50px;
+    background-color: #0e4259
+}
