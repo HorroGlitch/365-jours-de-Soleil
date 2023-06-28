@@ -17,10 +17,51 @@ h1 {
 
 #img_lachainemeteo {
     width: 80px;
-    margin: 1%;
 }
 
 nav {
     height: 50px;
-    background-color: #0e4259
+    background-color: #0e4259;
+}
+
+ul li {
+    display: inline-block;
+    width: 20%;
+    margin: 2%;
+}
+
+ul li img {
+    width: 25px;
+    height: 25px;
+}
+
+ul li img:hover {
+    background-color: rgba(79, 163, 182, 0.5);
+}
+
+main {
+    background-color: #4FA3B6;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+section {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cards_meteo {
+    width: 55%;
+}
+
+#nav_secondaire {
+    height: 350px;
+    width: 20%;
+    background-color: white;
 }
