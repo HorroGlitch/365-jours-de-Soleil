@@ -20,11 +20,11 @@ h1 {
 }
 
 nav {
-    height: 50px;
+    height: 50%;
     background-color: #0e4259;
 }
 
-ul li {
+#first_nav ul li {
     display: inline-block;
     width: 20%;
     margin: 2%;
@@ -44,6 +44,7 @@ main {
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 h2 {
@@ -54,14 +55,70 @@ section {
     width: 80%;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 #cards_meteo {
-    width: 55%;
+    width: 75%;
+    float: left;
+
+}
+
+#cards_meteo div {
+    width: 47%;
+    height: 120px;
+    background-color: white;
+    box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    text-transform:uppercase;
+}
+
+
+
+#cards_meteo div p span:nth-child(1){
+    color: #30a8f0;
+}
+
+#cards_meteo div p span:nth-child(2){
+    color: #ff0202;
+}
+
+
+#cards_meteo img{
+    width: 55px;
+    height: 55px;
 }
 
 #nav_secondaire {
-    height: 350px;
-    width: 20%;
+    height: 500px;
+    width: 30%;
     background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 21px 0px rgb(14 66 89 / 45%);
+}
+
+#nav_secondaire ul li img {
+    width: 25px;
+    height: 25px;
+}
+
+#nav_secondaire ul li {
+    margin-top: 5%;
+}
+
+#nav_secondaire ul:hover {
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(79, 163, 182, 0.5);
+}
+
+#galerie-images{
+width: 50%;
+}
+
+#galerie-images div{
+    width: 25%;
+    height: 100px;
 }
