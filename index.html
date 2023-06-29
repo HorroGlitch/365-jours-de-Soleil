@@ -1,15 +1,162 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link css here only when ccs is not imported in js yet -->
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
-    <title>Hello</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- <script src="./js/app.js" type="module"></script> -->
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Quicksand:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/bb2d1bb592.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <title>365 Jours De Soleil</title>
+</head>
+
+<body>
+  <header>
+    <a href="lachainemeteo.com"><img alt="météo-logo" src="img/logo.svg" id="img_lachainemeteo"></a>
+    <h1>
+      365 jours de soleil
+    </h1>
+    <nav id="first_nav">
+      <ul>
+        <li><img alt="cloud-sun" src="img/cloud-sun-solid.svg"><a>Prévisions</a></li>
+        <li><img alt="water" src="img/water-solid.svg"><a>Mer</a></li>
+        <li><img alt="mountain" src="img/mountain-solid.svg"><a>Montagne</a></li>
+        <li><img alt="earth-europe" src="img/earth-europe-solid.svg"><a>Climat</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="parallax"></div>
+
+    <section>
+      <article id="cards_meteo">
+        <h2>Prévisions à 8 jours</h2>
+        <div>
+          <p>lun<br> 20</p>
+          <img alt="meteolundi" src="img/chance-storm.png">
+          <p><span>14°</span>| <span>6°</span></p>
+        </div>
+
+        <div>
+          <p>mar<br> 21</p>
+          <img alt="meteomardi" src="img/smoke.png">
+          <p><span>8°</span>| <span>1°</span></p>
+        </div>
+
+        <div>
+          <p>mer<br> 22</p>
+          <img alt="meteomercredi" src="img/sleet.png">
+          <p><span>6°</span>| <span>-6°</span></p>
+        </div>
+
+        <div>
+          <p>jeu<br> 23</p>
+          <img alt="meteojeudi" src="img/snow.png">
+          <p><span>4°</span>| <span>-2°</span></p>
+        </div>
+
+        <!-- <div></div>
+        <div></div>
+        <div></div>
+        <div></div> -->
+      </article>
+      <article id="nav_secondaire">
+        <ul>
+          <li><img alt="vigilance-logo" src="img/triangle-exclamation-solid.svg"><a href="#Vigilance">Vigilance</a></li>
+          <li><img alt="outre-mer-logo" src="img/earth-asia-solid.svg"><a href="#Outre-mer">Outre-mer</a></li>
+          <li><img alt="climat-logo" src="img/earth-asia-solid.svg"><a href="#Climat"> Climat</a></li>
+          <li><img alt="montagne-logo" src="img/mountain-solid.svg"><a href="#Montagne"> Montagne</a></li>
+          <li><img alt="Mer-logo" src="img/water-solid.svg"><a href="#Mer">Mer</a></li>
+          <li><img alt="Pales-logo" src="img/umbrella-beach-solid.svg"><a href="#Pales">Pales</a></li>
+          <li><img alt="Animations-logo" src="img/earth-africa-solid.svg"><a href="#Animations">Animations</a></li>
+          <li><img alt="Open-data-logo" src="img/database-solid.svg"><a href="#Open data">Opendata</a></li>
+          <li><img alt="Services-logo" src="img/user-plus-solid.svg"><a href="#Services">Services</a></li>
+          <li><img alt="Mobile-logo" src="img/mobile-screen-button-solid.svg"><a href="#Mobile">Mobile</a></li>
+          <li><img alt="Prenium-logo" src="img/circle-user-solid.svg"><a href="#Prenium">Premium</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Les relevés du jour</th>
+        </tr>
+        <thead>
+          <tr>
+            <th>
+              Ville
+            </th>
+
+            <th>
+              Météo
+            </th>
+
+            <th>
+              Min
+            </th>
+
+            <th>
+              Max
+            </th>
+          </tr>
+          <tr>
+            <th>Madrid</th>
+            <th>Voilé</th>
+            <th>13°</th>
+            <th>20°</th>
+          </tr>
+          <tr>
+            <th>Berlin</th>
+            <th>Nuageux</th>
+            <th>8°</th>
+            <th>11°</th>
+          </tr>
+          <tr>
+<th>Lisbonne</th>
+<th>Ensoleillé</th>
+<th>13°</th>
+<th>21°</th>
+          </tr>
+        </thead>
+      </thead>
+      <tbody>
+        <td>Londres</td>
+        <td>Pluvieux</td>
+        <td>9°</td>
+        <td>11°</td>
+      </tbody>
+    </table>
+
+    <section>
+      <article id="galerie-images">
+        <img alt="primptemps" src="img/printemps.jpg">
+        <img alt="nuages" src="img/nuageux.jpg">
+        <img alt="neige" src="img/route_neige.gif">
+
+      </article>
+      <form>
+        <h2>Abonnez-vous!</h2>
+        <p>Recevez chaque jour les
+          prévisions de votre ville</p>
+        <input type="email" id="email">
+
+        <input id="abonnement" type="submit" value="S'abonner">
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>that’s all folks, nearly finished!| tdr 2023</p>
+  </footer>
+
+  <script src="./js/app.js" type="module"></script>
+</body>
+
 </html>
